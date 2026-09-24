@@ -1,0 +1,8 @@
+pwntools>=4.11.0
+ROPgadget>=7.4
+pyelftools>=0.30
+angr>=9.2.0
+claripy>=9.2.0
+cle>=9.2.0
+capstone>=5.0.0
+unicorn>=2.0.0
