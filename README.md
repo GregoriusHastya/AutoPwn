@@ -25,15 +25,15 @@
 ### 1. Install
 
 ```bash
-git clone https://github.com/<your-username>/chall_id.git
-cd chall_id
+git clone https://github.com/GregoriusHastya/AutoPwn.git
+cd AutoPwn
 pip install -r requirements.txt
 ```
 
 ### 2. Run
 
 ```bash
-python3 chall_id.py ./your_binary
+python3 auto_pwn.py ./your_binary
 ```
 
 That's it. You'll get a full report + `./decomp/` extraction + `solver.py` if it managed to solve it.
@@ -52,8 +52,8 @@ That's it. You'll get a full report + `./decomp/` extraction + `solver.py` if it
 
 ```bash
 # 1. Clone
-git clone https://github.com/<your-username>/chall_id.git
-cd chall_id
+git clone https://github.com/GregoriusHastya/AutoPwn.git
+cd AutoPwn
 
 # 2. Create a virtualenv (recommended)
 python3 -m venv venv
@@ -89,29 +89,29 @@ brew install python binutils file
 
 ```bash
 # Basic — analyze a binary
-python3 chall_id.py ./chall
+python3 auto_pwn.py ./chall
 
 # Decompile specific functions
-python3 chall_id.py ./chall -d main,win,check_flag
+python3 auto_pwn.py ./chall -d main,win,check_flag
 
 # Force a specific backend
-python3 chall_id.py ./chall --backend angr
-python3 chall_id.py ./chall --backend objdump
+python3 auto_pwn.py ./chall --backend angr
+python3 auto_pwn.py ./chall --backend objdump
 
 # Save full report
-python3 chall_id.py ./chall -o report.txt
+python3 auto_pwn.py ./chall -o report.txt
 
 # Skip silent auto-exploit
-python3 chall_id.py ./chall --no-autoexploit
+python3 auto_pwn.py ./chall --no-autoexploit
 
 # Interactive mode (prompts for everything)
-python3 chall_id.py
+python3 auto_pwn.py
 
 # Show installed backends
-python3 chall_id.py --list-backends
+python3 auto_pwn.py --list-backends
 
 # Extract only from an existing decompile dump
-python3 chall_id.py --extract-only saved_decompile.c
+python3 auto_pwn.py --extract-only saved_decompile.c
 ```
 
 ---
