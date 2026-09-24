@@ -1,4 +1,4 @@
-# chall_id
+# AutoPwn
 
 > **All-in-one binary exploitation toolkit** — auto-detect vulnerabilities, decompile with angr, suggest payloads, and even solve simple CTF challenges silently.
 
@@ -10,14 +10,13 @@
 
 ## Features
 
-- 🔍 **Automatic vulnerability detection** — 35+ pwn classes (ret2win, ret2libc, fmtstr, heap, SROP, ret2csu, and more)
-- 🧠 **angr-powered decompiler** — Ghidra-quality C with objdump fallback
-- 🎯 **Pattern recognition** — finds `main` and `win` in **stripped binaries** via heuristics
-- 💡 **Payload suggester** — prints ready-to-use exploit templates per vuln type
-- 🤖 **Silent auto-exploit** — tries known templates in the background, writes `solver.py` on success
-- 📁 **Per-function extraction** — every function saved as `<name>.txt` with suspicious lines marked `>>>`
-- 📊 **Rich reports** — checksec, dangerous imports, interesting strings, mitigations all in one view
-- 🧰 **No r2ghidra/Ghidra required** — pure Python + angr, works out of the box
+- **Automatic vulnerability detection** — 35+ pwn classes (ret2win, ret2libc, fmtstr, heap, SROP, ret2csu, and more)
+- **angr-powered decompiler** — Ghidra-quality C with objdump fallback
+- **Pattern recognition** — finds `main` and `win` in **stripped binaries** via heuristics
+- **Payload suggester** — prints ready-to-use exploit templates per vuln type
+- **Per-function extraction** — every function saved as `<name>.txt` with suspicious lines marked `>>>`
+- **Rich reports** — checksec, dangerous imports, interesting strings, mitigations all in one view
+- **No r2ghidra/Ghidra required** — pure Python + angr, works out of the box
 
 ---
 
